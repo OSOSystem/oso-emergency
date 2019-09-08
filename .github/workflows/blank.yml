@@ -1,0 +1,15 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Execute tests
+      run: ./gradlew check --stacktrace
+    - name: Create fat-jar
+      run: ./gradlew bootJar
