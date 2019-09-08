@@ -1,0 +1,1 @@
+[Contribution guidelines for this project](https://github.com/OSOSystem/oso-docs/blob/master/CONTRIBUTING.md)
